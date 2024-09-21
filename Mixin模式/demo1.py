@@ -47,7 +47,10 @@ class DictMixin:
         else:
             return value
 
+
 import json
+
+
 class JSONMixin():
     def to_json(self):
         return json.dumps(self.to_dict())
